@@ -550,7 +550,6 @@ PRODUCT_PACKAGES += \
     libvpphcp \
     libvpphvx \
     libvpplibrary \
-    libwfdhdcpcp \
     libwms \
     libwqe \
     libwvhidl \
@@ -752,6 +751,7 @@ PRODUCT_PACKAGES += \
     libwfdcommonutils_proprietary \
     libwfdconfigutils_proprietary \
     libwfddisplayconfig_proprietary \
+    libwfdhdcpcp \
     libwfdhdcpservice_proprietary \
     libwfdmminterface_proprietary \
     libwfdmmservice_proprietary \
