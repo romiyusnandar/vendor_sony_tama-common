@@ -866,11 +866,11 @@ PRODUCT_PACKAGES += \
     vendor.qti.ims.rcsconfig@1.0 \
     vendor.qti.imsrtpservice@2.0 \
     vendor.qti.imsrtpservice@2.1 \
+    com.qualcomm.qti.wifidisplayhal@1.0 \
     libwfdavenhancements \
     libwfdmmsrc_system \
     libwfdservice \
     vendor.qti.hardware.wifidisplaysession@1.0 \
-    vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk \
     com.qualcomm.qti.dpm.api@1.0 \
     libdpmctmgr \
     libdpmfdmgr \
