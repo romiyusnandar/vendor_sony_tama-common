@@ -317,12 +317,12 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@2.0-impl \
     btaudio_offload_if \
     com.qualcomm.qti.ant@1.0 \
-    com.qualcomm.qti.imscmservice@1.0 \
-    com.qualcomm.qti.imscmservice@2.0 \
-    com.qualcomm.qti.imscmservice@2.1 \
-    com.qualcomm.qti.imscmservice@2.2 \
-    com.qualcomm.qti.uceservice@2.0 \
-    com.qualcomm.qti.uceservice@2.1 \
+    com.qualcomm.qti.imscmservice@1.0_vendor \
+    com.qualcomm.qti.imscmservice@2.0_vendor \
+    com.qualcomm.qti.imscmservice@2.1_vendor \
+    com.qualcomm.qti.imscmservice@2.2_vendor \
+    com.qualcomm.qti.uceservice@2.0_vendor \
+    com.qualcomm.qti.uceservice@2.1_vendor \
     eglSubDriverAndroid \
     libEGL_adreno \
     libGLESv1_CM_adreno \
@@ -596,11 +596,11 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.qteeconnector@1.0 \
     vendor.qti.hardware.radio.am@1.0 \
     vendor.qti.hardware.radio.atcmdfwd@1.0 \
-    vendor.qti.hardware.radio.ims@1.0 \
-    vendor.qti.hardware.radio.ims@1.1 \
-    vendor.qti.hardware.radio.ims@1.2 \
-    vendor.qti.hardware.radio.ims@1.3 \
-    vendor.qti.hardware.radio.ims@1.4 \
+    vendor.qti.hardware.radio.ims@1.0_vendor \
+    vendor.qti.hardware.radio.ims@1.1_vendor \
+    vendor.qti.hardware.radio.ims@1.2_vendor \
+    vendor.qti.hardware.radio.ims@1.3_vendor \
+    vendor.qti.hardware.radio.ims@1.4_vendor \
     vendor.qti.hardware.radio.ims@1.5 \
     vendor.qti.hardware.radio.ims@1.6 \
     vendor.qti.hardware.radio.internal.deviceinfo@1.0 \
@@ -621,18 +621,18 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.tui_comm@1.0 \
     vendor.qti.hardware.vpp@1.1 \
     vendor.qti.hardware.vpp@1.2 \
-    vendor.qti.ims.callinfo@1.0 \
-    vendor.qti.ims.rcsconfig@1.0 \
-    vendor.qti.imsrtpservice@2.0 \
+    vendor.qti.ims.callinfo@1.0_vendor \
+    vendor.qti.ims.rcsconfig@1.0_vendor \
+    vendor.qti.imsrtpservice@2.0_vendor \
     vendor.qti.imsrtpservice@2.1-service-Impl \
-    vendor.qti.imsrtpservice@2.1 \
+    vendor.qti.imsrtpservice@2.1_vendor \
     vendor.qti.latency@2.0 \
     vendor.semc.hardware.light@1.0 \
     vendor.semc.system.idd@1.0 \
     vendor.somc.hardware.radio@1.0 \
     vendor.somc.hardware.security.secd@1.0 \
     vendor.somc.hardware.swiqi@1.0-impl \
-    vendor.somc.hardware.swiqi@1.0 \
+    vendor.somc.hardware.swiqi@1.0_vendor \
     com.qti.camx.chiiqutils \
     com.qti.eisv2 \
     com.qti.eisv3 \
@@ -699,7 +699,7 @@ PRODUCT_PACKAGES += \
     libcom.qti.chinodeutils \
     libcppf \
     libfastcrc \
-    libmmosal \
+    libmmosal_vendor \
     libmmrtpdecoder_proprietary \
     libmmrtpencoder_proprietary \
     libpn553_fw \
@@ -771,7 +771,7 @@ PRODUCT_PACKAGES += \
     libsonypostprocbundle \
     libsonysweffect \
     libznrwrapper \
-    vendor.qti.hardware.wifidisplaysession@1.0 \
+    vendor.qti.hardware.wifidisplaysession@1.0_vendor \
     vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl \
     vendor.somc.camera.device@3.2-impl \
     vendor.somc.camera.device@3.3-impl \
@@ -784,7 +784,7 @@ PRODUCT_PACKAGES += \
     vendor.somc.hardware.camera.device@1.0 \
     vendor.somc.hardware.camera.provider@1.0 \
     com.fingerprints.extension@1.0 \
-    com.qualcomm.qti.dpm.api@1.0 \
+    com.qualcomm.qti.dpm.api@1.0_vendor \
     vendor.qti.hardware.alarm@1.0-impl \
     lib-imsvtcore \
     lib-rtpcommon \
