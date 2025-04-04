@@ -334,7 +334,6 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss@2.0-impl-qti \
     audio.primary.sdm845 \
     com.qualcomm.qti.ant@1.0-impl \
-    sound_trigger.primary.sdm845 \
     thermal.somc \
     vendor.qti.esepowermanager@1.0-impl \
     vendor.qti.hardware.bluetooth_audio@2.0-impl \
