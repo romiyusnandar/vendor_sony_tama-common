@@ -5914,6 +5914,49 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libkeymasterutils",
+    owner: "sony",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libkeymasterutils.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libQSEEComAPI",
+                "liblog",
+                "libcrypto",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libkeymasterutils.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libQSEEComAPI",
+                "liblog",
+                "libcrypto",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "liblights-core",
     owner: "sony",
     strip: {
@@ -25263,12 +25306,6 @@ cc_library_shared {
 
 cc_library_shared {
     name: "libexcal_core",
-    compile_multilib: "both",
-    soc_specific: true,
-}
-
-cc_library_shared {
-    name: "libkeymasterutils",
     compile_multilib: "both",
     soc_specific: true,
 }

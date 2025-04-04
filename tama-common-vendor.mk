@@ -438,6 +438,7 @@ PRODUCT_PACKAGES += \
     libjnihelper \
     libkeymasterdeviceutils \
     libkeymasterprovision \
+    libkeymasterutils \
     liblights-core \
     liblistenjni \
     liblistensoundmodel2 \
