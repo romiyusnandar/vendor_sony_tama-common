@@ -16889,24 +16889,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libpn553_fw",
-    owner: "sony",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib/libpn553_fw.so",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libscveFaceLandmarks",
     owner: "sony",
     strip: {
@@ -23233,6 +23215,38 @@ cc_prebuilt_binary {
                 "libc",
                 "libm",
                 "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "android.hardware.nfc@1.1-service.cxd22xx",
+    owner: "sony",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/android.hardware.nfc@1.1-service.cxd22xx",
+            ],
+            shared_libs: [
+                "android.hardware.nfc@1.0",
+                "android.hardware.nfc@1.1",
+                "libbase",
+                "libc++",
+                "libcutils",
+                "libhardware",
+                "libhidlbase",
+                "libhidltransport",
+                "libhwbinder",
+                "liblog",
+                "libutils",
             ],
         },
     },
