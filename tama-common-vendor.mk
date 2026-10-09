@@ -365,7 +365,6 @@ PRODUCT_PACKAGES += \
     libRSDriver_adreno \
     libSecureUILib \
     libStDrvInt \
-    liba2dpoffload \
     libacdb-fts \
     libacdbrtac \
     libadiertac \
@@ -411,7 +410,6 @@ PRODUCT_PACKAGES += \
     libdrmtime \
     libdsi_netctrl \
     libdsutils \
-    libexthwplugin \
     libfastcvdsp_stub \
     libfastcvopt \
     libfastrpc_utf_stub \
@@ -509,7 +507,6 @@ PRODUCT_PACKAGES += \
     libscvePanorama \
     libscvePanorama_lite \
     libscveScan3D \
-    libsdedrm \
     libsdm-color \
     libsdm-diag \
     libsdm-disp-vndapis \
