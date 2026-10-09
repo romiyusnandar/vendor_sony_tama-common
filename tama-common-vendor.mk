@@ -377,7 +377,6 @@ PRODUCT_PACKAGES += \
     libaudioalsa \
     libaudioparsers \
     libbatching \
-    libbatterylistener \
     libbccQTI \
     libbluetooth_audio_session_qti \
     libc2d30_bltlib \
@@ -399,7 +398,6 @@ PRODUCT_PACKAGES += \
     libcneapiclient \
     libcneoplookup \
     libcneqmiutils \
-    libcomprcapture \
     libconfigdb \
     libcsd-client \
     libdevice_security_vendor \
@@ -425,10 +423,8 @@ PRODUCT_PACKAGES += \
     libgsl \
     libhdcprx_module \
     libhdcptx_module \
-    libhdmiedid \
     libhdmipassthru \
     libhdr_tm \
-    libhfp \
     libidd \
     libidl \
     libizat_client_api \
@@ -517,7 +513,6 @@ PRODUCT_PACKAGES += \
     libsensorcal \
     libsensorslog \
     libsettings \
-    libsndmonitor \
     libsns_device_mode_stub \
     libsns_fastRPC_util \
     libsns_low_lat_stream_stub \
@@ -526,7 +521,6 @@ PRODUCT_PACKAGES += \
     libsomc_thermal \
     libsonydseehxwrapper \
     libspcom \
-    libspkrprot \
     libspl \
     libssc \
     libssc_default_listener \
