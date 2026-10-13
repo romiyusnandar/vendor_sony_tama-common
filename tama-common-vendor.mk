@@ -369,6 +369,7 @@ PRODUCT_PACKAGES += \
     libacdbrtac \
     libadiertac \
     libadreno_utils \
+    libadreno_app_profiles \
     libadsp_default_listener \
     libadsprpc \
     libaoa \
@@ -424,7 +425,6 @@ PRODUCT_PACKAGES += \
     libhdcprx_module \
     libhdcptx_module \
     libhdmipassthru \
-    libhdr_tm \
     libidd \
     libidl \
     libizat_client_api \
@@ -503,10 +503,8 @@ PRODUCT_PACKAGES += \
     libscvePanorama \
     libscvePanorama_lite \
     libscveScan3D \
-    libsdm-color \
     libsdm-diag \
     libsdm-disp-vndapis \
-    libsdmextension \
     libsdsprpc \
     libsecureui \
     libsecureui_svcsock \

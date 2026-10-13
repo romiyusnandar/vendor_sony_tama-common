@@ -632,6 +632,7 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
+    check_elf_files: false,
     relative_install_path: "egl",
     prefer: true,
     soc_specific: true,
@@ -678,6 +679,7 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
+    check_elf_files: false,
     relative_install_path: "egl",
     prefer: true,
     soc_specific: true,
@@ -771,6 +773,7 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
+    check_elf_files: false,
     relative_install_path: "egl",
     prefer: true,
     soc_specific: true,
@@ -1553,6 +1556,7 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
+    check_elf_files: false,
     relative_install_path: "hw",
     prefer: true,
     soc_specific: true,
@@ -2087,6 +2091,7 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
+    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -2346,6 +2351,7 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
+    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -2742,9 +2748,59 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
+    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
+
+cc_prebuilt_library_shared {
+    name: "libadreno_app_profiles",
+    owner: "sony",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libadreno_app_profiles.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libhardware",
+                "libutils",
+                "libhidlbase",
+                "libdl",
+                "libz",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libadreno_app_profiles.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libhardware",
+                "libutils",
+                "libhidlbase",
+                "libdl",
+                "libz",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    check_elf_files: false,
+    prefer: true,
+    soc_specific: true,
+}
+
 
 cc_prebuilt_library_shared {
     name: "libadsp_default_listener",
@@ -3189,6 +3245,7 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
+    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -5138,51 +5195,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libhdr_tm",
-    owner: "sony",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libhdr_tm.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libsdm-color",
-                "libtinyxml2_1",
-                "libcutils",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libhdr_tm.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libsdm-color",
-                "libtinyxml2_1",
-                "libcutils",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libidd",
     owner: "sony",
     strip: {
@@ -5690,6 +5702,7 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
+    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -5725,6 +5738,7 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
+    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -8752,53 +8766,6 @@ cc_prebuilt_library_shared {
 
 
 cc_prebuilt_library_shared {
-    name: "libsdm-color",
-    owner: "sony",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libsdm-color.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libbinder",
-                "libutils",
-                "libdisplaydebug",
-                "libtinyxml2_1",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libsdm-color.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libbinder",
-                "libutils",
-                "libdisplaydebug",
-                "libtinyxml2_1",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libsdm-diag",
     owner: "sony",
     strip: {
@@ -8876,50 +8843,6 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libutils",
                 "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libsdmextension",
-    owner: "sony",
-    strip: {
-        none: true,
-    },
-    check_elf_files: false,
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libsdmextension.so",
-            ],
-            shared_libs: [
-                "libdisplaydebug",
-                "libsdmutils",
-                "libdisplayqos",
-                "libsdm-color",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libsdmextension.so",
-            ],
-            shared_libs: [
-                "libdisplaydebug",
-                "libsdmutils",
-                "libdisplayqos",
-                "libsdm-color",
                 "libc++",
                 "libc",
                 "libm",
