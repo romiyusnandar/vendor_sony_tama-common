@@ -14129,7 +14129,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/vendor.semc.hardware.light@1.0.so",
             ],
             shared_libs: [
-                "android.hardware.light@2.0",
                 "libhidlbase",
                 "libhidltransport",
                 "libhwbinder",
@@ -14147,7 +14146,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/vendor.semc.hardware.light@1.0.so",
             ],
             shared_libs: [
-                "android.hardware.light@2.0",
                 "libhidlbase",
                 "libhidltransport",
                 "libhwbinder",
@@ -14162,6 +14160,7 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
+    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
