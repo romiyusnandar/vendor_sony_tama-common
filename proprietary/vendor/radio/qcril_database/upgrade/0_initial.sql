@@ -169,7 +169,9 @@ INSERT INTO qcril_emergency_source_hard_mcc_table VALUES('222','911','','');
 INSERT INTO qcril_emergency_source_hard_mcc_table VALUES('222','999','','');
 INSERT INTO qcril_emergency_source_hard_mcc_table VALUES('222','08','','');
 INSERT INTO qcril_emergency_source_hard_mcc_table VALUES('222','118','','');
+/* SONY START - Remove 119 from local ecc for Italy
 INSERT INTO qcril_emergency_source_hard_mcc_table VALUES('222','119','','');
+SONY END */
 INSERT INTO qcril_emergency_source_hard_mcc_table VALUES('214','112','','');
 INSERT INTO qcril_emergency_source_hard_mcc_table VALUES('268','112','','');
 INSERT INTO qcril_emergency_source_hard_mcc_table VALUES('204','112','','');
@@ -249,7 +251,9 @@ INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('222','99','911','','');
 INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('222','99','999','','');
 INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('222','99','08','','');
 INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('222','99','118','','');
+/* SONY START - Remove 119 from local ecc for Italy
 INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('222','99','119','','');
+SONY END */
 INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('214','01','112','','');
 INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('268','01','112','','');
 INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('204','04','112','','');

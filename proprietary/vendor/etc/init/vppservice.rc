@@ -10,9 +10,11 @@ service vendor.vppservice /vendor/bin/vppservice
     # HIDL interfaces
     interface vendor.qti.hardware.vpp@1.1::IHidlVppService vppService
     interface vendor.qti.hardware.vpp@1.2::IHidlVppService vppService
+    interface vendor.qti.hardware.vpp@1.3::IHidlVppService vppService
+    interface vendor.somc.hardware.swiqi@1.0::IHidlSwiqi default
 
     # don't auto restart
     oneshot
 
-    # start only when requested
-    disabled
+    # start only when requested (uncomment below to disable service at boot)
+    # disabled
