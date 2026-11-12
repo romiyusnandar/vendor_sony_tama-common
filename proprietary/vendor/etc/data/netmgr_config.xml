@@ -2151,6 +2151,9 @@
    <!-- SDM845 parameters -->
    <listitem name = "SDM845">
 
+      <data name="rtm_rmnet_data_enabled" type="int"> 1 </data>
+      <data name="rtnetlink_tc_enabled" type="int"> 1 </data>
+
       <data name="qmi_dpm_enabled" type="int"> 1 </data>
       <data name="use_qmuxd" type="int"> 0 </data>
       <data name="dpm_retry_timeout" type="int"> 10000 </data>
