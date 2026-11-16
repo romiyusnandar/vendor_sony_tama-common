@@ -627,6 +627,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.imsrtpservice@2.1-service-Impl \
     vendor.qti.imsrtpservice@2.1_vendor \
     vendor.qti.latency@2.0 \
+    android.hardware.light@2.0 \
     vendor.semc.hardware.light@1.0 \
     vendor.semc.system.idd@1.0 \
     vendor.somc.hardware.radio@1.0 \
