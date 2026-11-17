@@ -513,6 +513,16 @@ PRODUCT_PACKAGES += \
     libsdm-color \
     libsdm-diag \
     libsdm-disp-vndapis \
+    libdisplaydebug \
+    libdrmutils \
+    libgpu_tonemapper \
+    libgralloccore \
+    libgrallocutils \
+    libqdMetaData \
+    libqdutils \
+    libqservice \
+    libsdmcore \
+    libsdmutils \
     libsdmextension \
     libsdsprpc \
     libsecureui \
